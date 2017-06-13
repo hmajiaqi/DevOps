@@ -40,8 +40,8 @@ LoadModule authz_svn_module   modules/mod_authz_svn.so
 	- 复制 `cp -r iF.SVNAdmin-stable-1.6.2/* /var/www/html/svnadmin`
 	- 更改data权限 `chmod -R 777 /var/www/html/svnadmin/data`<br/>
 	- 更改svnadmin权限	<br />`chown -R apache:apache /var/www/html/svnadmin/`<br />`chmod 777 /opt/svn/authz.conf`<br />`chmod 777 /opt/svn/passwd.conf`
-- 启动服务
-	`service httpd start`
+- 启动服务<br />
+	`service httpd start`<br />
 	`svnserve -d -r /opt/svn`
 - 浏览器访问
 	[http://server.ip/svnadmin](http://localhost/svnadmin) 默认进入登录界面,帐号密码都是admin
